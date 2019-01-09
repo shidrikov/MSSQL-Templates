@@ -75,4 +75,7 @@
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\IndexMaintenance.sql" />
+  </ItemGroup>
 </Project>
