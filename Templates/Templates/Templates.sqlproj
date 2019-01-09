@@ -77,5 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\IndexMaintenance.sql" />
+    <None Include="Scripts\Partitioning.sql" />
   </ItemGroup>
 </Project>
