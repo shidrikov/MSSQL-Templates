@@ -63,6 +63,10 @@
     <Folder Include="Scripts\Database" />
     <Folder Include="Scripts\Synonyms" />
     <Folder Include="Scripts\Performance" />
+    <Folder Include="Scripts\Querying data" />
+    <Folder Include="Scripts\Concurrency" />
+    <Folder Include="Scripts\Tricks" />
+    <Folder Include="Scripts\Partitioning" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WWI\WWI.sqlproj">
@@ -80,16 +84,30 @@
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\Partitioning.sql" />
-    <None Include="Scripts\TricksWithStrings.sql" />
     <None Include="Scripts\Database\RowCount.sql" />
     <None Include="Scripts\Database\SpaceUsedByTables.sql" />
     <None Include="Scripts\Synonyms\RebuildSynonyms.sql" />
+    <None Include="Scripts\Querying data\Pivoting.sql" />
+    <None Include="Scripts\Querying data\Grouping.sql" />
+    <None Include="Scripts\Querying data\Window functions.sql" />
+    <None Include="Scripts\Querying data\Apply operator.sql" />
+    <None Include="Scripts\Querying data\Built-in functions.sql" />
+    <None Include="Scripts\Querying data\Constraints.sql" />
+    <None Include="Scripts\Concurrency\Transaction Isolation levels demo.sql" />
+    <None Include="Scripts\Concurrency\Transaction_advanced.sql" />
+    <None Include="Scripts\Concurrency\Transaction_simple.sql" />
+    <None Include="Scripts\Tricks\GenerateSequentialNumbers.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\Indexes\Maintenance.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\Performance\SimpleStats.sql" />
+    <None Include="Scripts\Performance\SimpleQueryStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Tricks\TricksWithStrings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Partitioning\Partitioning.sql" />
   </ItemGroup>
 </Project>
