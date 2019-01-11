@@ -3,9 +3,9 @@
 
 DECLARE @db_id SMALLINT, @object_id INT;
 
-SET @db_id = DB_ID(N'WideWorldImporters');
+SET @db_id = DB_ID(N'WWI');
 
-SET @object_id = OBJECT_ID(N'WideWorldImporters.Sales.Orders');
+SET @object_id = OBJECT_ID(N'WWI.Sales.Orders');
 
 SELECT 
 	ixs.index_id                   AS idx_id,
@@ -24,14 +24,14 @@ ORDER BY avg_fragmentation_in_percent DESC;
 /*** Show index usage ***/
 
 SELECT
-    OBJECT_NAME(ixu.object_id, DB_ID('WideWorldImporters')) AS [object_name] ,
+    OBJECT_NAME(ixu.object_id, DB_ID('WWI')) AS [object_name] ,
     ix.[name]                                               AS index_name ,
     ixu.user_seeks + ixu.user_scans + ixu.user_lookups      AS user_reads,
     ixu.user_updates                                        AS user_writes
 FROM sys.dm_db_index_usage_stats ixu
-    INNER JOIN WideWorldImporters.sys.indexes ix ON ixu.[object_id] = ix.[object_id] AND 
+    INNER JOIN WWI.sys.indexes ix ON ixu.[object_id] = ix.[object_id] AND 
 													ixu.index_id = ix.index_id
-WHERE ixu.database_id = DB_ID('WideWorldImporters')
+WHERE ixu.database_id = DB_ID('WWI')
 ORDER BY user_reads DESC;
 
 

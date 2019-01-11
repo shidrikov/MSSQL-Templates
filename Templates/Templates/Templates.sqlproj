@@ -59,6 +59,10 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Scripts" />
+    <Folder Include="Scripts\Indexes" />
+    <Folder Include="Scripts\Database" />
+    <Folder Include="Scripts\Synonyms" />
+    <Folder Include="Scripts\Performance" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WWI\WWI.sqlproj">
@@ -76,7 +80,16 @@
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\IndexMaintenance.sql" />
     <None Include="Scripts\Partitioning.sql" />
+    <None Include="Scripts\TricksWithStrings.sql" />
+    <None Include="Scripts\Database\RowCount.sql" />
+    <None Include="Scripts\Database\SpaceUsedByTables.sql" />
+    <None Include="Scripts\Synonyms\RebuildSynonyms.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Indexes\Maintenance.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Performance\SimpleStats.sql" />
   </ItemGroup>
 </Project>
