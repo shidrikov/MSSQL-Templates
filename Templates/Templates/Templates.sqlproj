@@ -108,6 +108,9 @@
     <None Include="Scripts\Tricks\TricksWithStrings.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\Partitioning\Partitioning.sql" />
+    <None Include="Scripts\Partitioning\Partitioning_new.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Partitioning\Partitioning_existing.sql" />
   </ItemGroup>
 </Project>
