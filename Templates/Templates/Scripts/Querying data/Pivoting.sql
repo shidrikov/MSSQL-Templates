@@ -14,7 +14,7 @@ FROM pivotData
 
 
 -- Коротко
-WITH pivotData AS (SELECT R, C, A) FROM MyTable) 
+WITH pivotData AS (SELECT R, C, A FROM MyTable) 
 SELECT R, [C1]..[CN] FROM pivotData PIVOT (SUM(A) FOR C IN ([C1]..[CN])) AS pvt
 
 

@@ -1,12 +1,12 @@
 ﻿
 
 /*
-	This example demonstrates difference in phantom read handling within different isolation levels
-		1. Open each session script with SSMS in a separate window
+	This example demonstrates difference in handling phantom reads between different isolation levels
+		1. Open each session script in a separate SSMS window
 		2. Run refreshing script from session 1
-		3. Run transaction 1. 5 seconds later run transaction 2
-		4. Run transaction 1. 5 seconds later run transaction 3
-		5. Run transaction 1. 5 seconds later run transaction 4
+		3. Run transaction 1. Then, after 5 seconds, run transaction 2
+		4. Run transaction 1. Then, after 5 seconds, run transaction 3
+		5. Run transaction 1. Then, after 5 seconds, run transaction 4
 */
 
 --=====================================

@@ -97,6 +97,7 @@
     <None Include="Scripts\Concurrency\Transaction_advanced.sql" />
     <None Include="Scripts\Concurrency\Transaction_simple.sql" />
     <None Include="Scripts\Tricks\GenerateSequentialNumbers.sql" />
+    <None Include="Scripts\Performance\MostExpensiveQueries.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\Indexes\Maintenance.sql" />
